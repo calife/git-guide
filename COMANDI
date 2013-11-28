@@ -1,4 +1,21 @@
-ELENCO DI COMANDI UTILI
+#################################
+# ELENCO DI COMANDI UTILI
+# giovedì, 28. novembre 2013
+#################################
 
+## Operazione: Inizializzazione del repository
 
+mkdir project && cd project
+git init .
+git add .
 
+## Operazione: Vedere i log delle commit
+git log 
+
+## Operazione: Ripristino situazione precedente
+
+# Per reinstaurare lo stato corrispondente al commit corrente e PERMANENTEMENTE cancellare i commit più recenti
+git reset --hard  7667
+
+# Altre volte potrebbe capitarvi di voler fare solo un breve salto in uno stato precedente.
+git checkout 7667
