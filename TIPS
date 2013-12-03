@@ -1,0 +1,7 @@
+
+# Scorciatoie stile svn
+
+git config --global alias.st "status -s"
+git config --global alias.di "diff"
+git config --global alias.ci "commit"
+git config --global alias.co "checkout"
