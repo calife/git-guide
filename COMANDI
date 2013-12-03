@@ -6,7 +6,7 @@
 ## Operazione: Inizializzazione del repository
 
 mkdir project && cd project
-git init .
+git init
 git add .
 
 ## Operazione: Vedere i log delle commit
