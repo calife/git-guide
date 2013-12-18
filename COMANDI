@@ -27,9 +27,10 @@ git reset --hard  7667
 # Altre volte potrebbe capitarvi di voler fare solo un breve salto in uno stato precedente.
 git checkout 7667
 
-
-# Clonare un repository remoto accessibile via SSH
+## Clonare un repository remoto accessibile via SSH
 git clone mpucci@172.16.1.62:/home/mpucci/Scrivania/archibus-supporto
 
-# Aggiungere a git le cartelle vuote
+## Operazione: Aggiungere a git le cartelle vuote
 for i in `find . -type d -empty |grep -v .git` ; do touch $i/.gitignore ; done;
+
+alias gitaddempty='for i in `find . -type d -empty |grep -v .git` ; do touch $i/.gitignore ; done;'
