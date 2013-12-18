@@ -34,3 +34,13 @@ git clone mpucci@172.16.1.62:/home/mpucci/Scrivania/archibus-supporto
 for i in `find . -type d -empty |grep -v .git` ; do touch $i/.gitignore ; done;
 
 alias gitaddempty='for i in `find . -type d -empty |grep -v .git` ; do touch $i/.gitignore ; done;'
+
+
+## Operazione di reset .gitignore
+
+// Even if you haven't tracked the files so far, git seems to be able to "know" about 
+// them even after you add them to .gitignore.
+
+git rm . -r --cached
+git add .
+git commit -m "fixed untracked files"
