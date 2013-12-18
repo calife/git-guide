@@ -30,3 +30,6 @@ git checkout 7667
 
 # Clonare un repository remoto accessibile via SSH
 git clone mpucci@172.16.1.62:/home/mpucci/Scrivania/archibus-supporto
+
+# Aggiungere a git le cartelle vuote
+for i in `find . -type d -empty |grep -v .git` ; do touch $i/.gitignore ; done;
