@@ -22,6 +22,9 @@ git log
 
 ## Operazione: Ripristino situazione precedente
 
+# Per restorare un file recuperandolo dall' HEAD (zona del commit)
+git checkout -- <filename>
+
 # Per reinstaurare lo stato corrispondente al commit corrente e PERMANENTEMENTE cancellare i commit più recenti
 git reset --hard  7667
 
