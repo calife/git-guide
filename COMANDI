@@ -16,6 +16,8 @@ git config --global alias.br branch
 git config --global alias.up rebase
 git config --global alias.ci commit
 git config --global color.ui true
+# Ignora il file mode
+git config --global core.filemode false
 
 ## Operazione: Vedere i log delle commit
 git log 
