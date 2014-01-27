@@ -50,3 +50,6 @@ alias gitaddempty='for i in `find . -type d -empty |grep -v .git` ; do touch $i/
 git rm . -r --cached
 git add .
 git commit -m "fixed untracked files"
+
+# Cancellazione di una branch locale
+git branch -d branch_name
