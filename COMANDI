@@ -62,3 +62,13 @@ git branch -d branch_name
 git clone git@bitbucket.org:calife/xxxxx.git
 # Crea una local branch che punta alla remote branch development
 git checkout -b development origin/development
+
+
+# Rebase
+# Ecco: rebase non è altro che una macro che esegue automaticamente una serie di cherry-pick per evitarti di spostare a mano un commit alla volta 
+# da un ramo all’altro.
+
+git rebase development master
+
+# Hai chiesto a git: “sposta il ramo corrente sulla nuova base ``master``”.
+# Ricorda: rebase è del tutto equivalente a spostare uno per uno i commit con cherry-pick. Solo, è più comodo.
