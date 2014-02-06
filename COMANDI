@@ -18,6 +18,8 @@ git config --global alias.ci commit
 git config --global color.ui true
 # Ignora il file mode
 git config --global core.filemode false
+# Ignora ^M all' interno dei file
+git config --global core.autocrlf true
 
 ## Operazione: Vedere i log delle commit
 git log 
